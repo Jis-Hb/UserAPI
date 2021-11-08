@@ -1,0 +1,24 @@
+@url=http://localhost:3001/api
+@json =Content-Type:application/json
+### 
+get {{url}}
+
+###
+
+post {{url}}/register
+{{json}}
+
+{
+  "username":"admin",
+  "password":"123456"
+}
+
+### 
+
+post {{url}}/login
+{{json}}
+
+{
+  "username":"jiaohongen",
+  "password":"123456"
+}
